@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RA.S — Digital Art Portfolio</title>
+  <meta name="description" content="The maximalist digital art portfolio of RA.S — bright, modern, and bold with ample negative space." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Typography: bold maximalist + clean sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div id="cursor" aria-hidden="true"></div>
+
+  <!-- Header / Nav -->
+  <header class="header" id="top">
+    <a class="brand hoverable" href="#top" aria-label="RA.S Home">
+      <span class="brand-mark" aria-hidden="true">●</span>
+      <span class="brand-type">RA.S</span>
+    </a>
+
+    <button class="nav-toggle hoverable" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+    </button>
+
+    <nav class="nav" id="navMenu" aria-label="Primary">
+      <ul>
+        <li><a class="hoverable" href="#work">Work</a></li>
+        <li><a class="hoverable" href="#statement">Statement</a></li>
+        <li><a class="hoverable" href="#studio">Studio</a></li>
+        <li><a class="hoverable" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-kicker">Digital Art Portfolio</p>
+
+      <h1 class="hero-title" aria-label="RA.S">
+        <span class="title-chunk marker marker-yellow">RA</span><span class="title-dot marker marker-blue">.</span><span class="title-chunk marker marker-yellow">S</span>
+      </h1>
+
+      <p class="hero-sub">Maximalist visuals. Modern clarity. Bright energy.</p>
+
+      <div class="hero-cta">
+        <a class="btn btn-red hoverable" href="#work">Enter Portfolio</a>
+        <a class="btn btn-ghost hoverable" href="#statement">About the Work</a>
+      </div>
+
+      <!-- Decorative bursts -->
+      <div class="burst burst-a" aria-hidden="true"></div>
+      <div class="burst burst-b" aria-hidden="true"></div>
+      <div class="burst burst-c" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- Featured Work / Horizontal gallery -->
+  <section class="featured" id="work" aria-labelledby="featuredTitle">
+    <div class="section-head">
+      <h2 id="featuredTitle" class="section-title">Featured Works</h2>
+      <p class="section-note">Scroll horizontally • Use ← → keys</p>
+    </div>
+
+    <div class="carousel" tabindex="0" aria-roledescription="carousel" aria-label="Featured works">
+      <!-- Card 1 -->
+      <article class="card reveal" aria-label="Neon Bloom">
+        <div class="art art-1" role="img" aria-label="Abstract neon bloom with red and blue gradients"></div>
+        <div class="card-meta">
+          <h3>Neon Bloom</h3>
+          <p>Generative layers in motion—an ode to electric petals.</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card reveal" aria-label="Signal Parade">
+        <div class="art art-2" role="img" aria-label="Vivid signal waves in red, yellow, blue"></div>
+        <div class="card-meta">
+          <h3>Signal Parade</h3>
+          <p>Chromatic frequencies stitched into bold ribbons.</p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card reveal" aria-label="White Noise Red">
+        <div class="art art-3" role="img" aria-label="Minimal red on white with glitch texture"></div>
+        <div class="card-meta">
+          <h3>White Noise Red</h3>
+          <p>Minimal field study—silence punctured by crimson.</p>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card reveal" aria-label="Blue Marker City">
+        <div class="art art-4" role="img" aria-label="Marker-like blue strokes over grid"></div>
+        <div class="card-meta">
+          <h3>Blue Marker City</h3>
+          <p>Urban palimpsest of lines, notes, and memory.</p>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card reveal" aria-label="Sunstripe">
+        <div class="art art-5" role="img" aria-label="Yellow striations blazing across canvas"></div>
+        <div class="card-meta">
+          <h3>Sunstripe</h3>
+          <p>Warm, streaked, and fast—an afternoon run.</p>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="card reveal" aria-label="Red/Blue Dialogue">
+        <div class="art art-6" role="img" aria-label="Dialogue of red and blue orbs"></div>
+        <div class="card-meta">
+          <h3>Red/Blue Dialogue</h3>
+          <p>Two voices arguing, agreeing, and dancing.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Artist Statement -->
+  <section class="statement" id="statement">
+    <div class="statement-inner reveal">
+      <h2 class="section-title">Artist Statement</h2>
+      <p class="lead">
+        I’m <span class="marker marker-yellow">RA.S</span> — I build bright systems that breathe.
+      </p>
+      <p>
+        My practice lives between code and canvas. I chase moments where <span class="underline-ink ink-red">precision</span> meets
+        <span class="underline-ink ink-blue">impulse</span>, rendering textures that feel both designed and discovered.
+      </p>
+      <p>
+        The palette is intentional: red and white for clarity and charge; yellow and blue for accent and lift—
+        a <span class="marker marker-blue">marker’s memory</span> across digital paper.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn btn-red hoverable" href="#contact">Collaborate</a>
+        <a class="btn btn-ghost hoverable" href="#studio">See the Studio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studio tiles -->
+  <section class="studio" id="studio" aria-labelledby="studioTitle">
+    <h2 id="studioTitle" class="section-title">Studio</h2>
+    <div class="studio-grid">
+      <a href="#work" class="tile reveal hoverable">
+        <div class="tile-bg scribble scribble-yellow"></div>
+        <h3>Motion</h3>
+        <p>Loops and live visuals</p>
+      </a>
+      <a href="#work" class="tile reveal hoverable">
+        <div class="tile-bg scribble scribble-blue"></div>
+        <h3>Stills</h3>
+        <p>Prints and posters</p>
+      </a>
+      <a href="#work" class="tile reveal hoverable">
+        <div class="tile-bg scribble scribble-red"></div>
+        <h3>Experiments</h3>
+        <p>Sketches and systems</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-type">RA.S</span>
+        <span class="brand-mark">●</span>
+      </div>
+      <div class="footer-links">
+        <a class="hoverable" href="mailto:hello@ras.art" aria-label="Email RA.S">hello@ras.art</a>
+        <a class="hoverable" href="#" aria-label="Instagram">Instagram</a>
+        <a class="hoverable" href="#" aria-label="Behance">Behance</a>
+        <a class="hoverable" href="#" aria-label="Twitter/X">X</a>
+      </div>
+      <p class="fine">© <span id="year"></span> RA.S. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
